@@ -44,19 +44,27 @@ const Main = () => {
                   >
                     Acknowledgements
                   </span>
-                  if(output.indexOf((string.acknowledgements) !== -1))
-                  {
+                  {state.output.indexOf(string.acknowledgements) !== -1 ? (
                     <button
+                      class="focus:outline-none outline-none w-1/4"
                       onClick={() => {
                         dispatch({
                           type: "removeValue",
-                          payload: state.value,
+                          payload: string.acknowledgements,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                          payload: string.acknowledgements,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                          payload: string.acknowledgements,
                         });
                       }}
                     >
                       Delete
                     </button>
-                  }
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -73,15 +81,32 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /* dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     API Reference
                   </span>
+                  {state.output.indexOf(string.apireference) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.apireference,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                          payload: string.apireference,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                          payload: string.apireference,
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -98,15 +123,31 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Appendix
                   </span>
+                  {state.output.indexOf(string.appendix) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.appendix,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                          payload: string.appendix,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -123,15 +164,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Badges
                   </span>
+                  {state.output.indexOf(string.badges) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.badges,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -148,15 +201,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Contact
                   </span>
+                  {state.output.indexOf(string.contact) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.contact,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -173,15 +238,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Contributing
                   </span>
+                  {state.output.indexOf(string.contributing) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.contributing,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -198,15 +275,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Contributors
                   </span>
+                  {state.output.indexOf(string.contributors) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.contributors,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -223,15 +312,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Documentation
                   </span>
+                  {state.output.indexOf(string.documentation) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.documentation,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -248,15 +349,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Features
                   </span>
+                  {state.output.indexOf(string.features) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.features,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -273,15 +386,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Installation
                   </span>
+                  {state.output.indexOf(string.installation) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.installation,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -298,15 +423,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     License
                   </span>
+                  {state.output.indexOf(string.license) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.license,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -323,15 +460,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Logo
                   </span>
+                  {state.output.indexOf(string.logos) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.logos,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -348,15 +497,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /* dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Screenshots
                   </span>
+                  {state.output.indexOf(string.screenshots) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.screenshots,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
               <li>
@@ -373,15 +534,27 @@ const Main = () => {
                       dispatch({
                         type: "updateOutput",
                       });
-                      /*dispatch({
-                        type: "removeValue",
-                        payload: state.output,
-                      });*/
                     }}
                     class="w-3/4"
                   >
                     Title and Description
                   </span>
+                  {state.output.indexOf(string.title) !== -1 ? (
+                    <button
+                      class="focus:outline-none outline-none w-1/4"
+                      onClick={() => {
+                        dispatch({
+                          type: "removeValue",
+                          payload: string.title,
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                    >
+                      Delete
+                    </button>
+                  ) : null}
                 </div>
               </li>
             </ul>
