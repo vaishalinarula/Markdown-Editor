@@ -1,7 +1,7 @@
 import React from "react";
 import "../Main/Main";
 
-export const Header = (props) => {
+export const Header = ({ props }) => {
   console.log(props.output);
   const downloadFile = () => {
     const element = document.createElement("a");
