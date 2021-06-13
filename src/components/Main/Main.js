@@ -31,23 +31,34 @@ const Main = () => {
             <ul className="mt-4 mb-12 space-y-3">
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.acknowledgements,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Acknowledgements
-                  </span>
+                  {state.output.indexOf(string.acknowledgements) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Acknowledgements
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.acknowledgements,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Acknowledgements
+                    </span>
+                  )}
                   {state.output.indexOf(string.acknowledgements) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -68,23 +79,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.apireference,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    API Reference
-                  </span>
+                  {state.output.indexOf(string.apireference) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      API Reference
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.apireference,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      API Reference
+                    </span>
+                  )}
                   {state.output.indexOf(string.apireference) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -105,23 +127,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.appendix,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Appendix
-                  </span>
+                  {state.output.indexOf(string.appendix) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Appendix
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.appendix,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Appendix
+                    </span>
+                  )}
                   {state.output.indexOf(string.appendix) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -143,23 +176,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.badges,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Badges
-                  </span>
+                  {state.output.indexOf(string.badges) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Badges
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.badges,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Badges
+                    </span>
+                  )}
                   {state.output.indexOf(string.badges) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -180,23 +224,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.contact,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Contact
-                  </span>
+                  {state.output.indexOf(string.contact) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Contact
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.contact,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Contact
+                    </span>
+                  )}
                   {state.output.indexOf(string.contact) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -217,23 +272,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.contributing,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Contributing
-                  </span>
+                  {state.output.indexOf(string.contributing) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Contributing
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.contributing,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Contributing
+                    </span>
+                  )}
                   {state.output.indexOf(string.contributing) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -254,23 +320,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.contributors,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Contributors
-                  </span>
+                  {state.output.indexOf(string.contributors) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Contributors
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.contributors,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Contributors
+                    </span>
+                  )}
                   {state.output.indexOf(string.contributors) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -291,23 +368,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.documentation,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Documentation
-                  </span>
+                  {state.output.indexOf(string.documentation) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Documentation
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.documentation,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Documentation
+                    </span>
+                  )}
                   {state.output.indexOf(string.documentation) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -328,23 +416,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.features,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Features
-                  </span>
+                  {state.output.indexOf(string.features) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Features
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.features,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Features
+                    </span>
+                  )}
                   {state.output.indexOf(string.features) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -365,23 +464,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.installation,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Installation
-                  </span>
+                  {state.output.indexOf(string.installation) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Installation
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.installation,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Installation
+                    </span>
+                  )}
                   {state.output.indexOf(string.installation) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -402,23 +512,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.license,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    License
-                  </span>
+                  {state.output.indexOf(string.license) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      License
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.license,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      License
+                    </span>
+                  )}
                   {state.output.indexOf(string.license) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -439,23 +560,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.logos,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Logo
-                  </span>
+                  {state.output.indexOf(string.logos) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Logo
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.logos,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Logo
+                    </span>
+                  )}
                   {state.output.indexOf(string.logos) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -476,23 +608,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.screenshots,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Screenshots
-                  </span>
+                  {state.output.indexOf(string.screenshots) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Screenshots
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.screenshots,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Screenshots
+                    </span>
+                  )}
                   {state.output.indexOf(string.screenshots) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
@@ -513,23 +656,34 @@ const Main = () => {
               </li>
               <li>
                 <div className="flex justify-between block w-full h-full py-2 px-3 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
-                  <span
-                    onClick={() => {
-                      dispatch({
-                        type: "updateValue",
-                        payload: string.title,
-                      });
-                      dispatch({
-                        type: "updateSection",
-                      });
-                      dispatch({
-                        type: "updateOutput",
-                      });
-                    }}
-                    className="w-3/4"
-                  >
-                    Title and Description
-                  </span>
+                  {state.output.indexOf(string.title) !== -1 ? (
+                    <span
+                      onClick={() => {
+                        return false;
+                      }}
+                      className="w-3/4"
+                    >
+                      Title and Description
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => {
+                        dispatch({
+                          type: "updateValue",
+                          payload: string.title,
+                        });
+                        dispatch({
+                          type: "updateSection",
+                        });
+                        dispatch({
+                          type: "updateOutput",
+                        });
+                      }}
+                      className="w-3/4"
+                    >
+                      Title and Description
+                    </span>
+                  )}
                   {state.output.indexOf(string.title) !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
