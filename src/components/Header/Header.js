@@ -1,12 +1,24 @@
 import React from "react";
+import "../Main/Main";
 
-export const Header = () => {
+export const Header = (props) => {
+  console.log(props.output);
+  const downloadFile = () => {
+    const element = document.createElement("a");
+    const file = new Blob([props.output], {
+      type: "text/plain",
+    });
+    element.href = URL.createObjectURL(file);
+    element.download = "readme.md";
+    document.body.appendChild(element);
+    element.click();
+  };
   return (
     <div>
-      <header class="lg:pl-8 lg:pr-16 pr-8 pl-4 bg-white shadow flex flex-wrap items-center justify-between">
-        <div class="py-6 sm:px-6 flex flex-wrap items-center justify-center">
+      <header className="lg:pl-8 lg:pr-16 pr-8 pl-4 bg-white shadow flex flex-wrap items-center justify-between">
+        <div className="py-6 sm:px-6 flex flex-wrap items-center justify-center">
           <svg
-            class="fill-current text-blue-500 mr-2"
+            className="fill-current text-blue-500 mr-2"
             id="Capa_1"
             enable-background="new 0 0 512 512"
             height="32"
@@ -22,12 +34,13 @@ export const Header = () => {
               <path d="m286 392h-120c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15z"></path>
             </g>
           </svg>
-          <h1 class="text-2xl font-bold text-gray-900">Readme Editor</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Readme Editor</h1>
         </div>
-        <button class="py-2 px-4 rounded-md disabled:opacity-50 focus:outline-none outline-none md:bg-blue-600 md:hover:bg-blue-700 text-white">
-          <a href="/Main/Main.js" download>
-            Download
-          </a>
+        <button
+          className="py-2 px-4 rounded-md disabled:opacity-50 focus:outline-none outline-none md:bg-blue-600 md:hover:bg-blue-700 text-white"
+          onClick={downloadFile}
+        >
+          Download
         </button>
       </header>
     </div>

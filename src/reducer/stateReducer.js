@@ -9,7 +9,7 @@ export default function stateReducer(state, actionType) {
     case "removeValue":
       return {
         ...state,
-        output: state.output.filter((e) => e.value !== actionType.value),
+        output: state.output.filter((e) => e !== actionType.payload),
       };
   }
 }
