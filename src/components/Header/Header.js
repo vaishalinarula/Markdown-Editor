@@ -34,7 +34,7 @@ export const Header = ({ props }) => {
               <path d="m286 392h-120c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15z"></path>
             </g>
           </svg>
-          <h1 className="text-2xl font-bold text-gray-900">Readme Editor</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Markdown Editor</h1>
         </div>
         <button
           className="py-2 px-4 rounded-md disabled:opacity-50 focus:outline-none outline-none md:bg-blue-600 md:hover:bg-blue-700 text-white"

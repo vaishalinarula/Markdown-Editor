@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 export default function stateReducer(state, actionType) {
   switch (actionType.type) {
     case "updateValue":
