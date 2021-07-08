@@ -737,8 +737,6 @@ const Main = () => {
               className="border border-gray-500 rounded-md p-6 preview bg-white full-screen overflow-y-scroll w-full"
               style={{ height: "70vh", width: "100%" }}
             >
-              {/* <MDEditor value={state} onChange={onChange} /> */}
-
               <MDEditor.Markdown
                 source={state.finalOutput}
                 className="wmde-markdown wmde-markdown-color full-screen"
