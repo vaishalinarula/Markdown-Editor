@@ -31,11 +31,4 @@ export default function stateReducer(state, actionType) {
         nameSection: [...ar, ...state.nameSection.slice(idx + 1)],
       };
   }
-  // case "removeSection":
-
-  //   return {
-  //     ...state,
-
-  //   };
-  //}
 }
