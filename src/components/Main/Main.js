@@ -69,6 +69,10 @@ const Main = () => {
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
                         dispatch({
+                          type: "updateCurrentSection",
+                          payload: "acknowledgements",
+                        });
+                        dispatch({
                           type: "removeValue",
                         });
 
@@ -119,6 +123,10 @@ const Main = () => {
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
                         dispatch({
+                          type: "updateCurrentSection",
+                          payload: "apireference",
+                        });
+                        dispatch({
                           type: "removeValue",
                         });
 
@@ -165,10 +173,14 @@ const Main = () => {
                     Appendix
                   </span>
 
-                  {state.output.indexOf(string.appendix) !== -1 ? (
+                  {state.nameSection.indexOf("appendix") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "appendix",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -220,6 +232,10 @@ const Main = () => {
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
                         dispatch({
+                          type: "updateCurrentSection",
+                          payload: "badges",
+                        });
+                        dispatch({
                           type: "removeValue",
                         });
 
@@ -270,6 +286,10 @@ const Main = () => {
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
                         dispatch({
+                          type: "updateCurrentSection",
+                          payload: "contact",
+                        });
+                        dispatch({
                           type: "removeValue",
                         });
 
@@ -315,10 +335,14 @@ const Main = () => {
                     Contributing
                   </span>
 
-                  {state.output.indexOf(string.contributing) !== -1 ? (
+                  {state.nameSection.indexOf("contributing") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "contributing",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -365,10 +389,14 @@ const Main = () => {
                     Contributors
                   </span>
 
-                  {state.output.indexOf(string.contributors) !== -1 ? (
+                  {state.nameSection.indexOf("contributors") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "contributors",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -415,10 +443,14 @@ const Main = () => {
                     Documentation
                   </span>
 
-                  {state.output.indexOf(string.documentation) !== -1 ? (
+                  {state.nameSection.indexOf("documentation") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "documentation",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -465,10 +497,14 @@ const Main = () => {
                     Features
                   </span>
 
-                  {state.output.indexOf(string.features) !== -1 ? (
+                  {state.nameSection.indexOf("features") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "features",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -515,10 +551,14 @@ const Main = () => {
                     Installation
                   </span>
 
-                  {state.output.indexOf(string.installation) !== -1 ? (
+                  {state.nameSection.indexOf("installation") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "installation",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -565,10 +605,14 @@ const Main = () => {
                     License
                   </span>
 
-                  {state.output.indexOf(string.license) !== -1 ? (
+                  {state.nameSection.indexOf("license") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "license",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -615,7 +659,7 @@ const Main = () => {
                     Logo
                   </span>
 
-                  {state.output.indexOf(string.logos) !== -1 ? (
+                  {state.nameSection.indexOf("logos") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
@@ -665,10 +709,14 @@ const Main = () => {
                     Screenshots
                   </span>
 
-                  {state.output.indexOf(string.screenshots) !== -1 ? (
+                  {state.nameSection.indexOf("screenshots") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "screenshots",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
@@ -715,10 +763,14 @@ const Main = () => {
                     Title and Description
                   </span>
 
-                  {state.output.indexOf(string.title) !== -1 ? (
+                  {state.nameSection.indexOf("title") !== -1 ? (
                     <button
                       className="focus:outline-none outline-none w-1/4"
                       onClick={() => {
+                        dispatch({
+                          type: "updateCurrentSection",
+                          payload: "title",
+                        });
                         dispatch({
                           type: "removeValue",
                         });
